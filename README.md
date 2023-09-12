@@ -35,17 +35,17 @@ Scipy, Numpy, Sklearn, Astropy (if using external data)
 1) Download a collection of Kepler SAP lightcurves from a single quarter ([MAST archive](https://archive.stsci.edu/kepler/data_search/search.php) is one way), put these in a folder i.e. 'q2_data'
    for quarter 2 lightcurves.
    -- If wish to skip this step, prepped data available for quarters (6, 10, 14) for Kepler magnitude (12-13) stars, see note under Input data. 
-3) Use spatial_detrend.preproc.kepler_util.open_lc_data to extract data. Modify and use the script preproc/preprocess_data.py
-   to call open_lc_data and perform filtering of the data. 
-4) Run preproc/grid_data.py to obtain a discretized sensor and gridded lightcurves (modify relevant parameters).
-5) See the example provided for how to call the spatial detrending method with the solver class and choose input parameters.
+3) Use `spatial_detrend.preproc.kepler_util.open_lc_data` to extract data. Modify and use the script `preproc/preprocess_data.py`
+   to call `open_lc_data` and perform filtering of the data. 
+4) Run `preproc/grid_data.py` to obtain a discretized sensor and gridded lightcurves (modify relevant parameters).
+5) See the example provided for how to call the spatial detrending method with the `methods.solve.solver` class and choose input parameters.
 
 ### Input data
 
 To download prepped data requires git lfs: 
-git clone <your-repo-url> spatial-detrend
-cd spatial-detrend
-git lfs pull
+$git clone https://github.com/xiaziyna/spatial-detrend.git spatial-detrend
+$cd spatial-detrend
+$git lfs pull
 
 ### Parameters
 
