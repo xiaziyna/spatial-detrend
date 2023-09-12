@@ -42,7 +42,7 @@ Scipy, Numpy, Sklearn, Astropy (if using external data)
 
 ### Input data
 
-To download prepped data requires [git lfs](https://git-lfs.com): 
+To use prepped data, use [git lfs](https://git-lfs.com): 
 ```bash
 $ git clone https://github.com/xiaziyna/spatial-detrend.git spatial-detrend
 $ cd spatial-detrend
