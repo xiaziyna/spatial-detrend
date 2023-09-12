@@ -11,7 +11,7 @@ The spatial detrending method is described publication 'Robust Detrending of Spa
 The detrending method is built around a low-rank linear model that's conditioned on a total-variation spatial constraint. 
 This constraint fundamentally models spatial systematic structure across the sensor, offering a robust, data-driven solution for systematics mitigation.
 
-This library is currently in an experimental stage and has been tailored for specific use-cases as detailed in our accompanying Astrophysical Journal publication. 
+This library is currently in an experimental stage and has been tailored for specific use-cases as detailed in our accompanying Astronomical Journal publication. 
 It may not be highly generalizable across all kinds of datasets or astrophysical applications. 
 
 This library is compatible with Python 3.6 and later versions. 
@@ -32,17 +32,20 @@ Scipy, Numpy, Sklearn, Astropy (if using external data)
 
 ### Use
 
-If wish to start from scratch, download a collection of lightcurves from a single quarter
-
-download data
-preprocess data
-generate weight matrices/difference operators
-call solver
+1) Download a collection of Kepler SAP lightcurves from a single quarter ([MAST archive](https://archive.stsci.edu/kepler/data_search/search.php) is one way), put these in a folder i.e. 'q2_data'
+   for quarter 2 lightcurves.
+   -- If wish to skip this step, prepped data available for quarters (6, 10, 14) for Kepler magnitude (12-13) stars, see note under Input data. 
+3) Use spatial_detrend.preproc.kepler_util.open_lc_data to extract data. Modify and use the script preproc/preprocess_data.py
+   to call open_lc_data and perform filtering of the data. 
+4) Run preproc/grid_data.py to obtain a discretized sensor and gridded lightcurves (modify relevant parameters).
+5) See the example provided for how to call the spatial detrending method with the solver class and choose input parameters.
 
 ### Input data
 
-Quarter 6 prepped data included for your convenience. 
-For more prepped data see github repo! 
+To download prepped data requires git lfs: 
+git clone <your-repo-url> spatial-detrend
+cd spatial-detrend
+git lfs pull
 
 ### Parameters
 
@@ -60,7 +63,7 @@ spatial-detrend/
 ├── setup.py
 └── spatial_detrend/
     ├── data/
-    │   ├── cal_flux_10.p
+    │   ├── cal_flux_6.p
     │   ......
     │   └── sort_6.p
     ├── methods/
@@ -78,7 +81,7 @@ spatial-detrend/
 </pre>
 
 ## Citation
-If you find this package useful, please cite our Astrophysical Journal paper:
+If you find this package useful, please cite our Astronomical Journal paper:
 
 ## License
 
