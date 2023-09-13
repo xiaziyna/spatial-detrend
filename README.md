@@ -8,8 +8,9 @@ Developed by Jamila Taaki (UIUC).
 
 spatial-detrend is a Python library for detrending collections of lightcurves, using spatial (on the sensor) correlations of systematic/instrument noise. 
 The spatial detrending method is described publication 'Robust Detrending of Spatially Correlated Systematics in Kepler Light Curves Using Low-Rank Methods'.
-The detrending method is built around a low-rank linear model that's conditioned on a total-variation spatial constraint. 
-This constraint fundamentally models spatial systematic structure across the sensor, offering a robust, data-driven solution for systematics mitigation.
+The detrending method is built around a low-rank linear model, conditioned on a total-variation spatial constraint. Here systematics are estimated with 
+iterative estimates. 
+
 
 This library is currently in an experimental stage and has been tailored for specific use-cases as detailed in our accompanying Astronomical Journal publication. 
 It may not be highly generalizable across all kinds of datasets or astrophysical applications. 
