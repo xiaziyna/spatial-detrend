@@ -19,6 +19,7 @@ This library is compatible with Python 3.6 and later versions.
 
 ## Example
 A collection of lightcurves is denoted as **Y**, the net systematics as **L**. 
+
 A low rank (K) linear systematics model is assumed for **L**, consisting of linear combinations of shared basis vectors **V**, weighted by coefficients **C**. 
 <p align="center">
   <img src="https://github.com/xiaziyna/xiaziyna.github.io/blob/master/illustration.png" alt="Spatial coefficients">
