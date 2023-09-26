@@ -61,8 +61,6 @@ $ cd spatial-detrend
 $ git lfs pull
 ```
 
-### Parameters
-
 ### Worked examples
 
 See examples folder for a demo. 
