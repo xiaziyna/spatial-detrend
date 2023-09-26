@@ -18,6 +18,12 @@ It may not be highly generalizable across all kinds of datasets or astrophysical
 This library is compatible with Python 3.6 and later versions. 
 
 ## Example
+A collection of lightcurves is denoted as Y, the net systematics for Y are denoted as L. A low rank linear systematics model is assumed for L, consisting of basis vectors V and coefficient weightings C. 
+<p align="center">
+  <img src="https://github.com/xiaziyna/xiaziyna.github.io/blob/master/illustration.png" alt="Spatial coefficients">
+</p>
+
+
 
 ## Installation
 
