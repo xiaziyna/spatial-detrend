@@ -25,6 +25,10 @@ A low rank (K) linear systematics model is assumed for **L**, consisting of line
   <img src="https://github.com/xiaziyna/xiaziyna.github.io/blob/master/illustration.png" alt="Spatial coefficients">
 </p>
 
+Each coefficient term c(x, y, k) corresponds to the lightcurves (x, y) position and is the weighting for the k'th basis term v(k). 
+
+Lightcurves arranged by their (x, y) position exhibit spatial correlation. In our model, we condition the estimation of **L** on this property. 
+
 
 
 ## Installation
