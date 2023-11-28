@@ -99,5 +99,5 @@ Jamila S. Taaki, Athol J. Kemball, and Farzad Kamalabadi. Robust detrending of s
 
 ## License
 
-[spatial-detrend] is released under the [GNU General Public License v3.0](LICENSE).
+[spatial-detrend] is released under the [GNU General Public License v3.0](LICENSE.md).
 
