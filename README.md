@@ -93,7 +93,7 @@ spatial-detrend/
 </pre>
 
 ## Citation
-If you find this package useful, please cite our Astronomical Journal paper:
+Jamila S. Taaki, Athol J. Kemball, and Farzad Kamalabadi. Robust detrending of spatially correlated systematics in Kepler light curves using low-rank methods. The Astronomical Journal, 2023
 
 ## License
 
