@@ -18,7 +18,7 @@ It may not be highly generalizable across all kinds of datasets or astrophysical
 This library is compatible with Python 3.6 and later versions. 
 
 ## Example
-A collection of lightcurves is denoted as **Y**, the net systematics as **L**. 
+A collection of lightcurves is denoted as **Y**, and the net systematics as **L**. 
 
 A low rank (K) linear systematics model is assumed for **L**, consisting of linear combinations of shared basis vectors **V**, weighted by coefficients **C**. 
 <p align="center">
